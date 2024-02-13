@@ -5,6 +5,7 @@ import './index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ExampleOne } from './ExampleOne'
 import { ExampleTwo } from './ExampleTwo'
+import { ExampleThree } from './ExampleThree'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
@@ -13,6 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 				<Route path='/' element={<App />} />
 				<Route path='/example-one' element={<ExampleOne />} />
 				<Route path='/example-two' element={<ExampleTwo />} />
+				<Route path='/example-three' element={<ExampleThree />} />
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>

@@ -1,6 +1,6 @@
 import './App.css'
 import { Link } from 'react-router-dom'
-import { Home } from 'lucide-react';
+import { Home } from 'lucide-react'
 import { useRef } from 'react'
 
 export const ExampleOne = () => {
@@ -8,7 +8,7 @@ export const ExampleOne = () => {
 	const secondCateRef = useRef(null)
 	const thirdCateRef = useRef(null)
 
-	const handleScrollBy = ref => {
+	function handleScrollBy(ref) {
 		console.log(ref)
 		if (ref && ref.current) {
 			const offsetTop = ref.current.offsetTop

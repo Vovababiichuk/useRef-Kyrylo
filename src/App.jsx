@@ -7,7 +7,7 @@ function App() {
 	return (
 		<>
 			{/* У більшості випадків useRef використовується щоб отримати посилання на
-			ДОМ елемент */}
+			DOM елемент */}
 			<h1 className='text-5xl font-bold text-blue-400 mb-10'>
 				useRef - Xук посилання на DOM елемент
 			</h1>
@@ -21,6 +21,10 @@ function App() {
 						<li className='text-4xl text-rose-400 flex gap-2 items-center justify-center'>
 							<ExternalLink size={34} />
 							<Link to='/example-two'>ExampleTwo</Link>
+						</li>
+						<li className='text-4xl text-rose-400 flex gap-2 items-center justify-center'>
+							<ExternalLink size={34} />
+							<Link to='/example-three'>ExampleThree</Link>
 						</li>
 					</ul>
 				</nav>
