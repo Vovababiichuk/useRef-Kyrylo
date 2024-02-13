@@ -26,6 +26,10 @@ function App() {
 							<ExternalLink size={34} />
 							<Link to='/example-three'>ExampleThree</Link>
 						</li>
+						<li className='text-4xl text-rose-400 flex gap-2 items-center justify-center'>
+							<ExternalLink size={34} />
+							<Link to='/example-four'>ExampleFour</Link>
+						</li>
 					</ul>
 				</nav>
 			</div>

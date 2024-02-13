@@ -4,6 +4,7 @@ import { Home } from 'lucide-react'
 import { useRef, useEffect, useState } from 'react'
 
 export const ExampleThree = () => {
+	// перерендер не відбувається, перерендер виконується коли ми змінюємо state, саме в цьому є головна особливість useRef
 	const prevValueRef = useRef('null')
 	const [value, setValue] = useState(0)
 
@@ -12,6 +13,7 @@ export const ExampleThree = () => {
 		console.log(prevValueRef, 'prevValueRef')
 
 		// сюди записується значення яке було після першого рендеру
+		// і
 		prevValueRef.current = value
 		console.log('render Effect')
 
@@ -21,6 +23,10 @@ export const ExampleThree = () => {
 	const handleIncrement = () => {
 		setValue(value + 1)
 	}
+
+	useEffect(() => {
+		console.log('new prevValueRef')
+	}, [prevValueRef])
 
 	console.log('render')
 

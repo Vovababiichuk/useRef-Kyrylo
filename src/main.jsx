@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ExampleOne } from './ExampleOne'
 import { ExampleTwo } from './ExampleTwo'
 import { ExampleThree } from './ExampleThree'
+import { ExampleFour } from './ExampleFour'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
@@ -15,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 				<Route path='/example-one' element={<ExampleOne />} />
 				<Route path='/example-two' element={<ExampleTwo />} />
 				<Route path='/example-three' element={<ExampleThree />} />
+				<Route path='/example-four' element={<ExampleFour />} />
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>
